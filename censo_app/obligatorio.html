@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Obligatorio</title>
+</head>
+
+<body>
+
+
+    <!-- INICIO DE SESIÓN CENSISTA -->
+
+    <div id="inicioSesion">
+        <div class="containerInterface">
+            <h1>Iniciar sesión</h1>
+
+            <!-- Ingreso de datos -->
+            <label class="lb" for="txtInicioSesion-usuario">Usuario</label>
+            <input type="text" id="txtInicioSesion-usuario"> <br><br>
+
+            <label for="txtInicioSesion-password">Password</label>
+            <input type="text" id="txtInicioSesion-password"> <br> <br>
+
+            <!-- Botón principal -->
+            <input class="btnPrincipal" type="button" id="btnInicioSesion-ingresar" value="Ingresar"> <br> <br>
+
+            <!-- Botónes secundarios -->
+            <input class="btnSecundario" type="button" id="btnInicioSesion-registrarUsuario"
+                value="Registrarse como censista">
+            <input class="btnSecundario" type="button" id="btnInicioSesion-ingresarInvitado"
+                value="Ingresar como invitado">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- REGISTRO USUARIO CENCISTA -->
+
+    <div id="registroUsuario">
+
+        <div class="containerInterface">
+            <h1>Registro de usuario</h1>
+
+
+            <!-- Ingreso de datos -->
+            <label for="txtRegistroUsuario-nombre">Nombre</label>
+            <input type="text" id="txtRegistroUsuario-nombre"> <br><br>
+
+            <label for="txtRegistroUsuario-nombreUsuario">Nombre Usuario</label>
+            <input type="text" id="txtRegistroUsuario-nombreUsuario"> <br><br>
+
+            <label for="txtRegistroUsuario-password">Password</label>
+            <input type="text" id="txtRegistroUsuario-password"> <br><br>
+
+            <!-- Botón principal -->
+            <input class="btnPrincipal" type="button" id="btnRegistroUsuario-registrar" value="Registrar"> <br><br>
+
+            <!-- Botónes secundarios -->
+            <input class="btnSecundario" type="button" id="btnRegistroUsuario-iniciarSesion"
+                value="Iniciar sesión como censista">
+
+
+        </div>
+
+    </div>
+
+    <!-- MENU INVITADO -->
+
+    <div id="menuInvitado">
+        <div class="containerInterface">
+            <h1>Menú Invitado</h1>
+
+            <!-- BOTÓNES DE ACCESO -->
+
+            <input class="btnMenu" type="button" id="btnMenuInvitado-ingresarDatos" value="Ingresar datos"> <br>
+
+            <input class="btnMenu" type="button" id="btnMenuInvitado-eliminarDatos" value="Eliminar datos"> <br>
+
+            <input class="btnMenu" type="button" id="btnMenuInvitado-listaCensados" value="Lista de censados"> <br>
+
+
+            <!-- Botónes secundario -->
+            <input class="btnSecundario" type="button" id="btnMenuInvitado-iniciarSesionCensista"
+                value="Iniciar sesión como censista">
+
+        </div>
+    </div>
+
+
+    <!-- MENU CENSISTA -->
+
+    <div id="menuCensista">
+
+        <div class="containerInterface">
+            <h1>Menú Censista</h1>
+
+
+            <!-- BOTÓNES DE ACCESO -->
+
+            <input class="btnMenu" type="button" id="btnMenuCensista-ingresarDatos" value="Ingresar datos"> <br>
+
+            <input class="btnMenu" type="button" id="btnMenuCensista-consultarCensos"
+                value="Consultar censos por validar"> <br>
+
+            <input class="btnMenu" type="button" id="btnMenuCensista-reasignarPersona"
+                value="Reasignar persona para validar"> <br>
+
+            <input class="btnMenu" type="button" id="btnMenuCensista-informacionEstadistica"
+                value="Información estadística"> <br>
+
+
+            <!-- Botónes secundario -->
+            <input class="btnSecundario" type="button" id="btnMenuCensita-salir" value="Salir">
+
+        </div>
+
+    </div>
+
+
+    <!-- INGRESAR DATOS CENSISTA -->
+
+    <div id="ingresarDatos">
+        <div class="containerInterface">
+
+
+            <h1>Ingresar datos</h1>
+
+
+            <!-- Ingreso de datos -->
+
+            <label for="txtIngresarDatos-nombre">Nombre</label>
+            <input type="text" id="txtIngresarDatos-nombre"> <br>
+
+            <label for="txtIngresarDatos-apellido">Apellido</label>
+            <input type="text" id="txtIngresarDatos-apellido"><br>
+
+
+
+            <label for="txtIngresarDatos-edad">Edad</label>
+            <input type="number" id="txtIngresarDatos-edad"> <br>
+
+            <label for="txtIngresarDatos-cedula">Cédula</label>
+            <input type="text" id="txtIngresarDatos-cedula"> <br>
+
+
+
+            <label for="slcIngresarDatos-departamento">Departamento residencia</label>
+            <select id="slcIngresarDatos-departamento">
+                <option value="error">Seleccione...</option>
+            </select> <br>
+
+            <label for="slcIngresarDatos-ocupacion">Ocupación</label>
+            <select id="slcIngresarDatos-ocupacion">
+                <option value="error">Seleccione...</option>
+            </select> <br>
+
+
+            <label for="slcIngresarDatos-idCensista">ID Censista</label>
+            <select id="slcIngresarDatos-idCensista">
+                <option value="error">Seleccione...</option>
+            </select> <br>
+
+            <div id="cbIngresarDatos">
+                <label for="cbIngresarDatos-censado">Censado</label>
+                <input type="checkbox" id="cbIngresarDatos-censado">
+            </div> <br>
+
+            <!-- Botón principal -->
+            <input class="btnPrincipal" type="button" id="btnIngresarDatos-guardar" value="Guardar"> <br><br>
+
+            <!-- Botónes secundarios -->
+            <input class="btnSecundario" type="button" id="btnIngresarDatos-volverMenu" value="Volver menú">
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div id="consultarCensos">
+
+        <div class="containerInterface">
+            <h1>Consultar censos por validar</h1> <br><br>
+
+            <label for="txtConsultarCensos-cedula">Cédula</label>
+            <input type="text" id="txtConsultarCensos-cedula"> <br>
+
+            <input class="btnPrincipal" type="button" id="btnConsultarCensos-buscar" value="Buscar"> <br><br><br>
+
+
+            <!-- Botónes secundarios -->
+            <input class="btnSecundario" type="button" id="btnIngresarDatos-volverMenu" value="Volver menú">
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./js/codigo.js"></script>
+    <script src="./js/sistema.js"></script>
+    <script src="./js/funciones.js"></script>
+
+</body>
+
+</html>
